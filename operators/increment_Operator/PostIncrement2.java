@@ -1,0 +1,48 @@
+class PostIncrement2 
+{
+	public static void main(String[] args) 
+	{
+		/*int a=10;
+		System.out.println(a);
+		a++;
+		System.out.println(a);
+		a++;
+		System.out.println(a);*/
+		/*int b=a++;
+		System.out.println(a+" "+b);*/
+		
+		//int a = 5;
+		//int b = a++ + a++ + ++a;
+		//System.out.println(a+" "+b);
+		//System.out.println(b);
+		
+		
+		/*int a = 10;
+		int b = ++a + ++a;
+		System.out.println(a);
+		System.out.println(b);*/
+		
+		/*int a = 5;
+		int b = 2;
+		int c = ++a + b++ + a++;
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);*/
+		
+		/*int x = 5;
+        int y = x++ + ++x + x++;
+		System.out.println(x+" "+y);*/
+		
+		int a = 10;
+		int b = 20;
+
+		int c = a++ + --b;
+		int d = ++a + b--;
+
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+		
+	}
+}

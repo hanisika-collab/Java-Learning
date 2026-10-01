@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class FoodDelivery
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER ORDER AMOUNT , MEMBERSHIP ,DELIVERY DISTANCE,SPECIAL PROMOTION IS APPLICABLE PLEASE ENTER ");
+		double orderAmount=sc.nextDouble(),discount=0;
+		boolean membership=sc.nextBoolean();
+		double deliveryDistance=sc.nextDouble();
+		boolean specialPromotion=sc.nextBoolean();
+		if(orderAmount>=1000){
+			if(membership){
+				if(deliveryDistance <=5){
+					System.out.println("YOUR GOT FREE DELIVERY!! THE FINAL PRICE IS ... :) " +orderAmount);
+				}
+				else{
+					System.out.println("THE DELIVERY FEE IS RS.50 ,THE FINAL PRICE IS "+orderAmount+50);
+				}
+				
+			}
+			else{
+				if(specialPromotion){
+					discount=orderAmount*0.10;
+					System.out.println("YOU GOT 10%-DISCOUNT.. THE FINAL PRICE IS "+ (orderAmount-discount));
+				}
+			}
+		}
+		else if(orderAmount<1000){
+			System.out.println("THE DELIVERY FEE IS RS.50 ,THE FINAL PRICE IS"+orderAmount+50);
+		}
+		
+		
+		
+	}
+}

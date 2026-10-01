@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class PriceOfProduct
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the price");
+		double price=s.nextDouble();
+		String res=price<=500 ? price+" , it is under range" :"it is not in the range";
+		System.out.println(res);
+	}
+}

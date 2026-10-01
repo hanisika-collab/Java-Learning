@@ -1,0 +1,21 @@
+class EmpDetails 
+{
+	static void f1(){
+		int empId=255261;
+		String name="hani";
+		int age=21;
+		String dept="Testing";
+		String designation="Software tester";
+		long salary=500000l;
+		String gender="female";
+	    String city="Namakkal, Tamilnadu";
+		String Email="hanisikasiva@gmail.com";
+		long mobileNo=75388495934l;
+	}
+	public static void main(String[] args) 
+	{
+		
+		
+		System.out.println(f1);
+	}
+}

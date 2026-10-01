@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class GreaterNumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the 2 nunmber");
+		int a=s.nextInt(),b=s.nextInt();
+		String res=a>b? "The first number is greater":"The second number is less than or equal to that number";
+		System.out.println(res );
+	}
+}

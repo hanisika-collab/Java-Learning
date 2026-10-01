@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class PersonsAge
+ 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter Age:");
+		
+		int age=s.nextInt();
+		String res=age >= 18 && age<=60?"Eligible to Work":"Not Eligible to Work";
+		System.out.println(res);
+	}
+}

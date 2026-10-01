@@ -1,0 +1,10 @@
+class BankInterestCal 
+{
+	public static void main(String[] args) 
+	{
+		double interest=7.85;
+		int customerView=(int)interest;
+		System.out.println("Actual Interest: "+interest);
+		System.out.println("Customer View: "+customerView);
+	}
+}

@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class StudentDetails 
+{
+	public static void main(String[] args) 
+	{   
+		 Scanner sc=new Scanner(System.in);
+		 System.out.println("Enter id: ");
+		 int id=sc.nextInt();
+		 System.out.println("Enter name: ");
+		 String name=sc.next();
+		 System.out.println("Enter age: ");
+		 int age=sc.nextInt();
+		 System.out.println("Enter mobile number: ");
+		 long mobileNo=sc.nextLong();
+		 System.out.println("Enter aadhar Number: ");
+		 long aadharNo=sc.nextLong();
+		 System.out.println("Enter email: ");
+		 String email=sc.next();
+		 System.out.println("Enter course: ");
+		 String course=sc.next();
+		 System.out.println("Enter branch: ");
+		 String branch=sc.next();
+		 System.out.println("Enter height: ");
+		 float height=sc.nextFloat();
+		 System.out.println("Enter weight: ");
+		 float weight=sc.nextFloat();
+		 System.out.println(id);
+		 System.out.println(name);
+		 System.out.println(age);
+		 System.out.println(mobileNo);
+		 System.out.println(aadharNo);
+		 System.out.println(email);
+		 System.out.println(course);
+		 System.out.println(branch);
+		 System.out.println(height);
+		 System.out.println(weight);
+		
+	}
+}

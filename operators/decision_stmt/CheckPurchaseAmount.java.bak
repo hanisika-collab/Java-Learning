@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class CheckPurchaseAmount
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER AMOUNT");
+		double amount=sc.nextDouble();
+		double discountAmount=0;
+		if(amount >=10000){
+			discountAmount=amount-(amount*0.20);
+			System.out.println("20%-discount applied"+discountAmount);
+		}
+		else if(amount >=5000 && amount <=99999){
+			discountAmount=amount-(amount*0.10);
+			System.out.println("10%-discount applied"+discountAmount);
+		}
+		else{
+			System.out.println("No discount.. :(");
+		}
+	}
+}

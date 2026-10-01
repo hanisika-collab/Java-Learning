@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class EqualOrNot 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Dear User..Please Enter Two Number :)");
+		int a=sc.nextInt(),b=sc.nextInt();
+		String res=a==b? "The Two values are Equal":"The Two values are Not Equal";
+		System.out.println(res);
+	}
+}

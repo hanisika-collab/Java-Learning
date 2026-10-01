@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Scholorship 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter marks, attendance,family income");
+		double marks=sc.nextDouble(),attendance=sc.nextDouble(),familyIncome=sc.nextDouble();
+		if(marks >=85){
+			if(attendance >=90)
+				if(familyIncome<500000)
+				     System.out.println("Full Scholorship Provided");
+		}
+		else if(marks >=70 && marks <=84){
+			if(attendance >=85)
+				if(familyIncome<700000)
+				   System.out.println("Partial Scholorship Provided");
+		}
+		else
+			System.out.println("No Scholorship!");
+	}
+}
+//System.out.println("");

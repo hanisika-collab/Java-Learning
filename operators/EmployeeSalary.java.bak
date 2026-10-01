@@ -1,0 +1,14 @@
+class EmployeeSalary 
+{
+	public static void main(String[] args) 
+	{
+		int MonthlySalary=450000;
+		double Bonus=MonthlySalary*0.18;
+		double totalAmt=MonthlySalary+Bonus;
+		int deductionAmt=3500;
+		double finalAmt=totalAmt-deductionAmt;
+		System.out.println("Bonus: "+Bonus);
+		System.out.println("the total amount: "+totalAmt);
+		System.out.println("The Final Amt of Employee Salary including bonus and deduction: "+finalAmt);
+	}
+}

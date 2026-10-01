@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class NumberCheck 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter number:");
+		int a=s.nextInt();
+		String res=a>10 && a<50?"The number the under range ":"The number is not under the Range";
+		System.out.println(res);
+	}
+}

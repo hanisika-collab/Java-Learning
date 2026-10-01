@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Bank 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER ACCOUNT BALANCE");
+		double amountBalance=sc.nextDouble();
+		System.out.println("ENTER WITHDRAWAL AMOUNT");
+		double withdrawalAmount=sc.nextDouble();
+		
+		if(withdrawalAmount <= amountBalance){
+			System.out.println("Withdrawal Successful");
+		}
+		else{
+		System.out.println("Insufficient Balance");
+		}
+	}
+}

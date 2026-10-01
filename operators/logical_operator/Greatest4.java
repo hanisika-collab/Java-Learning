@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class Greatest4 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter four numbers");
+		int a=s.nextInt(),b=s.nextInt(),c=s.nextInt(),d=s.nextInt();
+		int res=a>b && a>c &&a>d?a:b>c && b>d?b:c>d?c:d;
+		System.out.println(res +" is Greatest");
+	}
+}

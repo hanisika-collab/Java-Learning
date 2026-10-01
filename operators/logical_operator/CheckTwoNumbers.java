@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class CheckTwoNumbers 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter 2 number");
+		int a=s.nextInt(),b=s.nextInt();
+		String res=a>10 && b>10 ?"The number is accepted":"The number is not accepted,\n because it is not given in range";
+		System.out.println(res);
+	}
+}

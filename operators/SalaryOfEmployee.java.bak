@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class SalaryOfEmployee 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int salary=sc.nextInt();
+		int greater=salary > 30000;
+		System.out.println("Yes, It is Greater than 30000");
+		int lower=salary<30000;
+		System.out.println("Yes, It is less than 30000");
+		int equal=salary =30000;
+		System.out.println("Yes, It is Eqaul to 30000");
+		
+	}
+}
