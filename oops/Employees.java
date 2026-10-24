@@ -1,0 +1,51 @@
+class Employees 
+{
+	int id;
+	String name;
+	double salary;
+	String role;
+	public void details(){
+		System.out.println("id is : "+id);
+		System.out.println("name is: "+name);
+		System.out.println("Salary is: "+salary);
+		System.out.println("Role is: "+role);
+		System.out.println("-----------------------");
+	}
+	Employees(int id){
+		this.id=id;
+	}
+	Employees(int id,String name){
+		this.id=id;
+		this.name=name;
+	}
+	Employees(int id,String name,String role){
+		this.id=id;
+		this.name=name;
+		this.role=role;
+	}
+	Employees(int id,String name,double salary,String role){
+		this.id=id;
+		this.name=name;
+		this.salary=salary;
+		this.role=role;
+	}
+	Employees(String name,int id,String role,double salary){
+		this.id=id;
+		this.name=name;
+		this.salary=salary;
+		this.role=role;
+	}
+	public static void main(String[] args) 
+	{
+		Employees e1=new Employees(101);
+		e1.details();
+		Employees e2=new Employees(102,"Leo");
+		e2.details();
+		Employees e3=new Employees(103,"Harry","Automation Tester");
+		e3.details();
+		Employees e4=new Employees(104,"hani",230000,"AI Automation Tester");
+		e4.details();
+		Employees e5=new Employees("hani",105,"Manual tester",2500000);
+		e5.details();
+	}
+}

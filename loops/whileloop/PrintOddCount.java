@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class PrintOddCount 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter n value");
+		int s=sc.nextInt(),n=1,count=0;
+		while(s>=n){
+			if(n %2==1)
+			       count++;
+			n++;
+		}
+		System.out.println("The count is: "+count);
+	}
+}

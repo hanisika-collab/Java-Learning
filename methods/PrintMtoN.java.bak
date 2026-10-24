@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class PrintMtoN 
+{
+	public static void print(int m, int n){
+		for(;m<=n;m++)
+			System.out.println(m);
+	}
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter n value");
+		int m=s.nextInt(), n=s.nextInt();
+	    print(m,n);
+	}
+}

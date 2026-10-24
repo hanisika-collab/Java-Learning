@@ -1,0 +1,13 @@
+import java.util.Scanner
+class PrintNum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter m and n values");
+		int m=s.nextInt(),n=s.nextInt();
+		for( ;m<=n;m++){
+			System.out.println(m);
+		}
+	}
+}

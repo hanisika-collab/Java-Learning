@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class OddDigits 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter n value");
+		int n=s.nextInt();
+		for(;n!=0;n /=10){
+			int last=n%10;
+			if(last % 2==1){
+				System.out.println(last);
+			}
+		}
+	}
+}

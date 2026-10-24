@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class SumDigits 
+{
+	public static void sumdigits(int n){
+		int sum=0;
+		for(;n!=0;n/=10){
+			int last=n%10;
+			sum +=last;
+			
+			
+		}
+		System.out.println("the sum  is : "+sum);
+	}
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter n value");
+		int n=s.nextInt();
+	    sumdigits(n);
+	}
+}

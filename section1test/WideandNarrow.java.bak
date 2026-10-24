@@ -1,0 +1,15 @@
+class WideandNarrow 
+{
+	public static void main(String[] args) 
+	{
+		int a=10;
+		long b=a;
+		System.out.println("the int initialization is"+a);
+		System.out.println("the  long initialization is"+b);
+		
+		int c=10;
+		byte d=(byte) c;
+		System.out.println("the int initialization is"+c);
+		System.out.println("the byte initialization is"+d);
+	}
+}

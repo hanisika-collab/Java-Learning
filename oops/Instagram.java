@@ -1,0 +1,47 @@
+class Instagram 
+{
+	String userName;
+	String password;
+	int followers;
+	int following;
+	
+	public void details(){
+		System.out.println("Username: "+userName);
+		System.out.println("password: "+password);
+		System.out.println("Followers: "+followers);
+		System.out.println("Following: "+following);
+		System.out.println("-------------------------");
+	}
+	
+	Instagram(String userName){
+		this.userName=userName;
+	}
+	Instagram(String userName,String password){
+		this.userName=userName;
+		this.password=password;
+	}
+	Instagram(String userName,String email,int followers,int following){
+		this.userName=userName;
+		this.password=password;
+		this.followers=followers;
+		this.following=following;
+	}
+	Instagram(int followers,String userName,String password,int following){
+		this.userName=userName;
+		this.password=password;
+		this.followers=followers;
+		this.following=following;
+	}
+	public static void main(String[] args) 
+	{
+		Instagram a1=new Instagram("hani");
+		a1.details();
+		Instagram a2=new Instagram("hanisika","hani@123");
+		a2.details();
+		Instagram a3=new Instagram("hema","hani@1233",123,234);
+		a3.details();
+		Instagram a4=new Instagram(123,"dharun","hani@443",234);
+		a4.details();
+		
+	}
+}

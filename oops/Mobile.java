@@ -1,0 +1,34 @@
+class Mobile 
+{
+	String brand;
+	double price;
+	String RAM;
+	String ROM;
+	String battery;
+	public void details(){
+		System.out.println("Brand name is: "+brand);
+		System.out.println("price  is: "+price);
+		System.out.println("RAM is: "+RAM);
+		System.out.println("ROM is: "+ROM);
+		System.out.println("battery is: "+battery);
+		System.out.println("-----------------------");
+	}
+	Mobile(String brand,double price,
+	String RAM,
+	String ROM,
+	String battery){
+		this.brand=brand;
+		this.price=price;
+		this.RAM=RAM;
+		this.ROM=ROM;
+		this.battery=battery;
+	}
+	
+	public static void main(String[] args) 
+	{
+		Mobile m1=new Mobile("vivo y27",27000,"12GB","256GB","5600mAh");
+		m1.details();
+		Mobile m2=new Mobile("vivo y300",29000,"16GB","512GB","5600mAh");
+		m2.details();
+	}
+}
